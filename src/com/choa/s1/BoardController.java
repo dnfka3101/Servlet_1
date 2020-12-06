@@ -43,7 +43,7 @@ public class BoardController extends HttpServlet {
 		path = path.substring(path.lastIndexOf("/"));
 		
 		String info="";
-		
+		//boardList
 		if(path.equals("/boardList.board")) {
 			System.out.println("boardList");
 			info = "./boardList.jsp";
@@ -55,6 +55,7 @@ public class BoardController extends HttpServlet {
 			e.printStackTrace();
 			}
 		request.setAttribute("list", ar);
+		//board Wirte
 		}else if(path.equals("/boardWrite.board")) {
 			System.out.println("boardWrite");
 			info = "./boardWrite.jsp";
